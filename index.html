@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid database</title>
+    <script src="bundle.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="bg">
+            <div id="title">
+                Covid database
+            </div>
+        </div>
+            <form action="" class="data" id="form">
+                <input type="text" placeholder="Country" id="country" required>
+                <div>
+                    <input id="date-input" required type="date">
+                </div>
+                <div class="tickbox">
+                    <input type="checkbox" id="checkbox-1" class="input">
+                    <label for="checkbox1">Deaths</label>
+                </div>
+                <div class="tickbox">
+                    <input type="checkbox" id="checkbox-2" class="input">
+                    <label for="checkbox2">Vaccine info</label>
+                </div>
+                <button type="reset">X</button>
+                <button type="submit" id="submit-btn">Search</button>
+            </form>
+    </header>
+    <div class="content">
+        <div id="error-message" style="display:none">Hiba történt az adatbetöltés közben!</div>
+        <div id="cards-container"></div>
+    </div>
+    <div class="loader" id="loading" style="display:none"></div>
+</body>
+
+</html>
