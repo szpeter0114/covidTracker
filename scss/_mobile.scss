@@ -1,0 +1,30 @@
+@media (min-width: 350px) and (max-width: 1000px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        background-color: #b4f7d3;
+
+        #title {
+            width: fit-content;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .content {
+        zizi-card {
+            min-width: 361px;
+
+            img {
+                min-width: 45%;
+            }
+        }
+    }
+
+} 
